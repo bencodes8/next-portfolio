@@ -6,12 +6,24 @@ import Link from 'next/link';
 import { Link as LinkIcon } from 'lucide-react';
 import { TypographyH2, TypographyLarge } from '@/components/typography/headings';
 
+const techStack = [
+  {displayName: 'HTML5', srcName: 'html5'},
+  {displayName: 'CSS3', srcName: 'css3'},
+  {displayName: 'JavaScript', srcName: 'javascript'},
+  {displayName: 'Typescript', srcName: 'typescript'},
+  {displayName: 'React', srcName: 'react'},
+  {displayName: 'Nextjs', srcName: 'nextjs'},
+  {displayName: 'Bootstrap', srcName: 'bootstrap'},
+  {displayName: 'Material-UI', srcName: 'material-ui'},
+  {displayName: 'Tailwind', srcName: 'tailwind'}
+];
+
 export default function Home() {
   return (
     <main className="sm:container">
       <Nav />
       <section id="home" className="mt-[3rem] p-1 h-[calc(100vh-3rem)]">
-        <div className="flex h-full items-center">
+        <div className="flex h-full items-center md:justify-evenly sm:flex-col md:flex-row">
           <Card>
             <CardHeader>
               <CardTitle>About</CardTitle>
@@ -35,12 +47,24 @@ export default function Home() {
             <CardContent>
               <i className="flex">
                 <Link href="https://www.linkedin.com/in/benybku" target="_blank" rel="noopener noreferrer">
-                  <Image src="icons/linkedin.svg" alt="linkedin" width={48} height={48} />
+                  <Image src="icons/brand/linkedin.svg" alt="linkedin" width={48} height={48} />
                 </Link>
                 <Link href="https://github.com/kub12803" target="_blank" rel="noopener noreferrer">
-                  <Image src="icons/github.svg" alt="github" width={48} height={48} />
+                  <Image src="icons/brand/github.svg" alt="github" width={48} height={48} />
                 </Link>
               </i>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Tech Stack</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>Technologies I have used to build applications.</CardDescription>
+              <div className="grid grid-cols-5 gap-4 mt-2">
+                
+              </div>
             </CardContent>
           </Card>
         </div>
