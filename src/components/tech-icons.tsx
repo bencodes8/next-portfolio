@@ -3,7 +3,6 @@ import Image from 'next/image';
 export interface TechIcon {
     displayName: string;
     srcName: string;
-    specialSrcName?: string;
 };
 
 export function TechIcons({ displayName, srcName, ...props }: TechIcon) {

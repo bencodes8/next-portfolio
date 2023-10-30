@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Link as LinkIcon } from 'lucide-react';
 import { TypographyH2, TypographyLarge } from '@/components/typography/headings';
 import { TechIcon, TechIcons } from '@/components/tech-icons';
+import { Certificate, CertificateIcon } from '@/components/certificate-icons';
 import { ShieldCheck } from 'lucide-react';
 
 const techStack: TechIcon[] = [
@@ -25,7 +26,11 @@ const portfolioTechStack: TechIcon[] = [
   {displayName: 'Nextjs', srcName: 'nextjs'},
   {displayName: 'Typescript', srcName: 'typescript'},
   {displayName: 'Tailwind', srcName: 'tailwind'},
+];
 
+const certificates: Certificate[] = [
+  {displayName: 'CS50X', imageSrc: 'harvard-logo', href: 'https://certificates.cs50.io/a8e5aa84-b4e9-4bf7-896c-fd359f80befa.pdf?size=letter'},
+  {displayName: 'CS50W', imageSrc: 'harvard-logo', href: 'https://certificates.cs50.io/a23d55f5-13bf-4e6d-a055-d48f327bb369.pdf?size=letter'}
 ];
 
 export default function Home() {
@@ -49,8 +54,8 @@ export default function Home() {
                   </div>
                   <TypographyLarge><span className="text-destructive">Aspiring Software Developer</span></TypographyLarge>
                   <CardDescription className="py-6 max-w-md">
-                    Wrapping up my final semester studying Mechanical Engineering. 
-                    I have passion for learning new technologies to ultimately provide more effecient solutions through code for building applications.
+                    Wrapping up my final semester in Mechanical Engineering. 
+                    I have passion for learning new technologies to ultimately provide efficient solutions for building applications.
                   </CardDescription>
               </CardContent>
               <CardFooter className="pb-1">
@@ -69,10 +74,12 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="flex"><ShieldCheck />Certifications</CardTitle>
+                <CardTitle className="flex"><ShieldCheck />&nbsp;Certificates</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="grid grid-cols-2">
 
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -93,7 +100,7 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>My Portfolio Utilized...</CardTitle>
+                <CardTitle>My Portfolio Utilizes...</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-4 gap-2 mt-1">
@@ -107,5 +114,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
