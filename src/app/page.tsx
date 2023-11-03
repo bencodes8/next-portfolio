@@ -29,8 +29,20 @@ const portfolioTechStack: TechIcon[] = [
 ];
 
 const certificates: Certificate[] = [
-  {displayName: 'CS50X', imageSrc: 'harvard-logo', href: 'https://certificates.cs50.io/a8e5aa84-b4e9-4bf7-896c-fd359f80befa.pdf?size=letter'},
-  {displayName: 'CS50W', imageSrc: 'harvard-logo', href: 'https://certificates.cs50.io/a23d55f5-13bf-4e6d-a055-d48f327bb369.pdf?size=letter'}
+  {
+    displayName: 'CS50x', 
+    imageSrc: 'harvard-logo', 
+    href: 'https://certificates.cs50.io/a8e5aa84-b4e9-4bf7-896c-fd359f80befa.pdf?size=letter',
+    description: 'Harvard university\'s\ introduction to the intellectual enterprises of computer science and the art of programming.',
+    date_received: new Date("2022").getFullYear().toString()
+  },
+  {
+    displayName: 'CS50w', 
+    imageSrc: 'harvard-logo', 
+    href: 'https://certificates.cs50.io/a23d55f5-13bf-4e6d-a055-d48f327bb369.pdf?size=letter',
+    description: 'Course pickups where CS50x lefts off, diving more deeply into the design and implementation of web applications.',
+    date_received: new Date("2023").getFullYear().toString()
+  }
 ];
 
 export default function Home() {
@@ -40,25 +52,23 @@ export default function Home() {
       <section id="home" className="mt-[3rem] p-1 h-[calc(100vh-3rem)]">
         <div className="flex h-full items-center md:justify-evenly sm:flex-col md:flex-row">
           <div className="flex flex-col space-y-2">
-            <Card>
+            <Card className="relative">
               <CardHeader>
                 <CardTitle>About</CardTitle>
-              </CardHeader>
-              <CardContent>
-                  <div className="flex justify-between">
-                    <TypographyH2>Hi, I'm <span className="text-primary">Ben</span></TypographyH2>
-                    <Avatar>
-                      <AvatarImage src="avatar/memoji.jpeg"/>
+                <Avatar className="absolute right-10 top-5">
+                      <AvatarImage src="avatar/memoji.jpeg" />
                       <AvatarFallback>BK</AvatarFallback>
                     </Avatar>
-                  </div>
+              </CardHeader>
+              <CardContent>
+                  <TypographyH2>Hi, I'm <span className="text-primary">Ben</span></TypographyH2>
                   <TypographyLarge><span className="text-destructive">Aspiring Software Developer</span></TypographyLarge>
                   <CardDescription className="py-6 max-w-md">
                     Wrapping up my final semester in Mechanical Engineering. 
                     I have passion for learning new technologies to ultimately provide efficient solutions for building applications.
                   </CardDescription>
               </CardContent>
-              <CardFooter className="pb-1">
+              <CardFooter className="pb-2">
                 <LinkIcon />&nbsp;Links
               </CardFooter>
               <CardContent>
@@ -77,8 +87,11 @@ export default function Home() {
                 <CardTitle className="flex"><ShieldCheck />&nbsp;Certificates</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2">
-
+                <CardDescription>Hover over to view more details!</CardDescription>
+                <div className="flex mt-4 space-x-2">
+                  {certificates.map((certificate, index) => (
+                    <CertificateIcon key={index} displayName={certificate.displayName} imageSrc={certificate.imageSrc} href={certificate.href} description={certificate.description} date_received={certificate.date_received} />
+                  ))}
                 </div>
               </CardContent>
             </Card>
