@@ -7,10 +7,10 @@ export interface Certificate {
     imageSrc: string;
     href: string;
     description: string;
-    date_received: string;
+    year_received: string;
 };
 
-export function CertificateIcon ({ displayName, imageSrc, href, description, date_received, ...props}: Certificate) {
+export function CertificateIcon ({ displayName, imageSrc, href, description, year_received }: Certificate) {
     return (
         <HoverCard>
             <HoverCardTrigger asChild>
@@ -27,7 +27,7 @@ export function CertificateIcon ({ displayName, imageSrc, href, description, dat
                     <p className="text-sm">{description}</p>
                     <div className="flex items-center pt-2">
                     <span className="text-xs text-muted-foreground">
-                        Received in {date_received}
+                        Received in {year_received}
                     </span>
                     </div>
                 </div>
