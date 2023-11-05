@@ -16,7 +16,8 @@ export default function Home() {
     <main className="xs:container">
       <Nav />
       <section id="home" className="mt-[3rem] p-1 h-[calc(100vh-3rem)]">
-        <div className="flex h-full items-center xs:justify-evenly xs:flex-col lg:flex-row">
+        <div className="flex h-full items-center lg:justify-evenly xs:max-lg:flex-col xs:max-lg:mt-4 xs:max-lg:space-y-4">
+
           <div className="flex flex-col space-y-2">
             <Card className="relative">
               <CardHeader>
@@ -63,7 +64,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="flex flex-col space-y-2 md: ml-4">
+          <div className="flex flex-col space-y-2 lg:ml-4">
             <Card>
               <CardHeader>
                 <CardTitle>Skills & Tools</CardTitle>
@@ -77,9 +78,9 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="xs:max-lg:hidden xs:max-lg:max-w-md">
               <CardHeader>
-                <CardTitle>My Portfolio Utilizes...</CardTitle>
+                <CardTitle>This Portfolio Was Built Using...</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-4 gap-2 mt-1">

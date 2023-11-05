@@ -7,7 +7,7 @@ export interface Certificate {
     imageSrc: string;
     href: string;
     description: string;
-    year_received: string;
+    year_received: number;
 };
 
 export function CertificateIcon ({ displayName, imageSrc, href, description, year_received }: Certificate) {
