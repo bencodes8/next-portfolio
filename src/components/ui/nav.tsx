@@ -4,7 +4,7 @@ import { ModeToggle } from "./theme-toggle";
 export default function Nav() {
     return (
         <nav className="fixed w-full left-0 top-0 border-b-2 z-10 backdrop-blur-md">
-            <div className="sm:container flex p-1 items-center">
+            <div className="xs:container flex p-1 items-center">
                 <div className="flex-grow">
                     <TypographyH4>{'<'} <span className="text-primary">Ben</span> {'/>'}</TypographyH4>
                 </div>

@@ -13,10 +13,10 @@ import { ShieldCheck } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="sm:container">
+    <main className="xs:container">
       <Nav />
       <section id="home" className="mt-[3rem] p-1 h-[calc(100vh-3rem)]">
-        <div className="flex h-full items-center md:justify-evenly sm:flex-col lg:flex-row">
+        <div className="flex h-full items-center xs:justify-evenly xs:flex-col lg:flex-row">
           <div className="flex flex-col space-y-2">
             <Card className="relative">
               <CardHeader>
@@ -34,16 +34,16 @@ export default function Home() {
                     I have passion for learning new technologies to ultimately provide efficient solutions for building applications.
                   </CardDescription>
               </CardContent>
-              <CardFooter className="pb-2">
+              <CardFooter className="pb-4">
                 <LinkIcon />&nbsp;Links
               </CardFooter>
               <CardContent>
-                <i className="flex">
-                  <Link href="https://www.linkedin.com/in/benybku" target="_blank" rel="noopener noreferrer">
-                    <Image src="icons/brand/linkedin.svg" alt="linkedin" width={48} height={48} />
+                <i className="flex space-x-2">
+                  <Link className="flex items-center" href="https://www.linkedin.com/in/benybku" target="_blank" rel="noopener noreferrer">
+                    <Image src="/icons/brand/linkedin.png" alt="linkedin" width={48} height={48} />
                   </Link>
                   <Link href="https://github.com/kub12803" target="_blank" rel="noopener noreferrer">
-                    <Image src="icons/brand/github.svg" alt="github" width={48} height={48} />
+                    <Image src="/icons/brand/github.png" alt="github" width={48} height={48} />
                   </Link>
                 </i>
               </CardContent>

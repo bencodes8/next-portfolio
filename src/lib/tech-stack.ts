@@ -8,7 +8,7 @@ export const techStack: TechIcon[] = [
     {displayName: 'React', srcName: 'react'},
     {displayName: 'Nextjs', srcName: 'nextjs'},
     {displayName: 'Bootstrap', srcName: 'bootstrap'},
-    {displayName: 'Material-UI', srcName: 'material-ui'},
+    {displayName: 'MaterialUI', srcName: 'material-ui'},
     {displayName: 'Tailwind', srcName: 'tailwind'},
     {displayName: 'Django', srcName: 'django'}
 ];
