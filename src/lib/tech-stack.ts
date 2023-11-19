@@ -13,8 +13,9 @@ export const techStack: TechIcon[] = [
     {displayName: 'Django', srcName: 'django'}
 ];
   
-export const portfolioTechStack: TechIcon[] = [
-    {displayName: 'Nextjs', srcName: 'nextjs'},
-    {displayName: 'TypeScript', srcName: 'typescript'},
-    {displayName: 'Tailwind', srcName: 'tailwind'},
+export const learnTechStack: TechIcon[] = [
+    {displayName: 'Angular2', srcName: 'angular'},
+    {displayName: 'Spring', srcName: 'spring-boot'},
+    {displayName: 'Vue3', srcName: 'vue'},
+    {displayName: 'Postgres', srcName: 'postgres'}
 ];
