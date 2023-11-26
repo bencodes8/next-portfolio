@@ -6,11 +6,13 @@ import Nav from '@/components/ui/nav';
 import Link from 'next/link';
 import { Link as LinkIcon } from 'lucide-react';
 import { TypographyH2, TypographyLarge } from '@/components/typography/headings';
+import { TypographyP } from '@/components/typography/text';
 import { TechIcons } from '@/components/tech-icons';
 import { techStack, learnTechStack } from '@/lib/tech-stack';
 import { CertificateIcon } from '@/components/certificate-icons';
 import { certificates } from '@/lib/certificates';
 import { ShieldCheck } from 'lucide-react';
+import { Projects } from '@/lib/projects';
 
 export default function Home() {
   return (
@@ -29,7 +31,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                   <TypographyH2>Hi, I'm <span className="text-primary">Ben</span></TypographyH2>
-                  <TypographyLarge><span className="text-muted-foreground">Aspiring Software Developer</span></TypographyLarge>
+                  <TypographyLarge><span className="text-muted-foreground">Aspiring Full-Stack Engineer</span></TypographyLarge>
                   <CardDescription className="py-6 max-w-md">
                     Welcome to my portfolio! I have passion for learning new technologies to ultimately provide efficient solutions 
                     for building applications.
@@ -95,28 +97,16 @@ export default function Home() {
       </section>
       <section id="projects" className="flex flex-col items-center justify-center">
         <TypographyH2 className="xs:max-lg:pt-10">Projects</TypographyH2>
-        <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It&apos;s animated by default, but you can disable it if you
-          prefer.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+        <Accordion type="multiple" className="w-full p-2">
+          { Projects.map((project, index) => (
+            <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger>{project.title}</AccordionTrigger>
+                <AccordionContent className="flex xs:max-md:flex-col">
+                  <TypographyP>{project.description}</TypographyP>
+                </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </section>
     </main>
   );
