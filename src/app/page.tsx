@@ -34,7 +34,7 @@ export default function Home() {
                   <TypographyLarge><span className="text-muted-foreground">Aspiring Full-Stack Engineer</span></TypographyLarge>
                   <CardDescription className="py-6 max-w-md">
                     Welcome to my portfolio! I have passion for learning new technologies to ultimately provide efficient solutions 
-                    for building applications.
+                    for building applications. Looking to apply my skills in a career in tech.
                   </CardDescription>
               </CardContent>
               <CardFooter className="pb-4">
@@ -56,7 +56,7 @@ export default function Home() {
                 <CardTitle className="flex"><ShieldCheck />&nbsp;Certificates</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>Hover over to view more details!</CardDescription>
+                <CardDescription>Hover over to view details!</CardDescription>
                 <div className="flex mt-4 space-x-2">
                   {certificates.map((certificate, index) => (
                     <CertificateIcon key={index} displayName={certificate.displayName} imageSrc={certificate.imageSrc} href={certificate.href} description={certificate.description} year_received={certificate.year_received} />
@@ -74,15 +74,15 @@ export default function Home() {
               <CardContent>
                 <CardDescription>Technologies I have used to build applications.</CardDescription>
                 <div className="grid grid-cols-5 gap-3 mt-6">
-                  {techStack.map((tech, index) => (
-                    <TechIcons key={index} displayName={tech.displayName} srcName={tech.srcName} />
+                  {techStack.map((icon, index) => (
+                    <TechIcons key={index} displayName={icon.displayName} srcName={icon.srcName} />
                   ))}
                 </div>
               </CardContent>
             </Card>
             <Card >
               <CardHeader>
-                <CardTitle>Currently learning...</CardTitle>
+                <CardTitle>Currently Learning...</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-4 gap-2 mt-1">
@@ -101,12 +101,32 @@ export default function Home() {
           { Projects.map((project, index) => (
             <AccordionItem key={index} value={`item-${index + 1}`}>
                 <AccordionTrigger>{project.title}</AccordionTrigger>
-                <AccordionContent className="flex xs:max-md:flex-col">
-                  <TypographyP>{project.description}</TypographyP>
+                <AccordionContent className="flex xs:max-xl:flex-col justify-center items-center">
+                  <div className="xl:w-1/2 w-full xs:max-xl:order-last xs:max-xl:mt-4">
+                    {project.paragraphs.map((paragraph, index) => (
+                      <TypographyP key={index} className="text-muted-foreground">
+                        {paragraph}
+                      </TypographyP>
+                    ))}
+                    <div className="flex space-x-6 mt-6">
+                      {project.techIcons.map((icon, index) => (
+                        <TechIcons key={index} displayName={icon.displayName} srcName={icon.srcName} />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="xl:w-1/2 w-full">
+                    <Image className="mx-auto" src={`/projects/${project.imageFile}`} width={640} height={480} alt={`${project.imageFile}`} />
+                  </div>  
                 </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
+      </section>
+      <section id="footer" className="py-6 xs:text-center lg:text-left">
+        <div className="text-muted-foreground">
+          &copy; 2023. Built by Ben. Source can be found on my <span className="underline"><Link href="https://github.com/bencodes8/next-portfolio" target="_blank" rel="noopener noreferrer">
+            Github</Link></span>.
+        </div>
       </section>
     </main>
   );
