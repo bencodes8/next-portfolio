@@ -67,7 +67,7 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-          <div className="flex flex-col space-y-2 lg:ml-4">
+          <div className="flex flex-col space-y-2 lg:ml-4 xs:max-lg:w-full">
             <Card>
               <CardHeader>
                 <CardTitle>Skills & Tools</CardTitle>

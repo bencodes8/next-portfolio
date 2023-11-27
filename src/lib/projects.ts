@@ -12,7 +12,11 @@ interface Project {
 export const Projects: Project[] = [
     {
         title: 'Neural Net. Pressure Analysis and Prediction',
-        paragraphs: ['TODO'],
+        paragraphs: [
+            "My mechanical engineering team's senior design project involved building a 'sparbot' inspired by football tackle dummies. The purpose of this project was to analyze the effects of physical impact caused through athlete training.",
+            "I was appointed the role of the software engineer in the software subsystem to build and train a neural network architecture to analyze and predict a pressure map. Our subteam utilized sensors from a FLIR IR camera and Tactilus sensor to provide the necessary training/test data.",
+
+        ],
         techIcons: [
             {displayName: 'Python3', srcName: 'python3'},
             {displayName: 'TensorFlow', srcName: 'tensorflow'}
