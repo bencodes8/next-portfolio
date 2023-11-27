@@ -1,8 +1,15 @@
 'use client';
-import { TypographyH4 } from "../typography/headings";
-import { ModeToggle } from "./theme-toggle";
-import { animateScroll, scroller } from "react-scroll";
-import { AlignJustify } from "lucide-react";
+import { TypographyH4 } from '../typography/headings';
+import { ModeToggle } from './theme-toggle';
+import { animateScroll, scroller } from 'react-scroll';
+import { AlignJustify } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+  } from '@/components/ui/dropdown-menu';
 
 export default function Nav() {
     const scrollToTop = () => {
@@ -32,6 +39,24 @@ export default function Nav() {
                     <li><button type="button" className="hover:text-muted-foreground xs:max-sm:hidden block">
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                         Resume</a></button></li>
+                    <li className="sm:hidden">
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <Button variant="outline" size="icon">
+                                    <AlignJustify />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="end">
+                                <DropdownMenuItem onClick={scrollToTop}>Home</DropdownMenuItem>
+                                <DropdownMenuItem onClick={scrollToProjects}>Projects</DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                                        Resume
+                                    </a>
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </li>
                     <li><ModeToggle /></li>
                 </ul>
             </div>
