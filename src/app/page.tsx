@@ -32,7 +32,7 @@ export default function Home() {
                     </Avatar>
               </CardHeader>
               <CardContent>
-                  <TypographyH2>Hi, I'm <span className="text-primary">Ben</span></TypographyH2>
+                  <TypographyH2>Hi, I&apos;m <span className="text-primary">Ben</span></TypographyH2>
                   <TypographyLarge><span className="text-muted-foreground">Aspiring Full-Stack Engineer</span></TypographyLarge>
                   <CardDescription className="py-6 max-w-md">
                     Welcome to my portfolio! I have passion for learning new technologies to ultimately provide efficient solutions 
