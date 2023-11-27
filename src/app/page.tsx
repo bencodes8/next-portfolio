@@ -74,7 +74,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>Technologies I have used to build applications.</CardDescription>
-                <div className="grid grid-cols-5 gap-3 mt-6">
+                <div className="grid xs:grid-cols-3 sm:grid-cols-5 gap-3 mt-6">
                   {techStack.map((icon, index) => (
                     <TechIcons key={index} displayName={icon.displayName} srcName={icon.srcName} />
                   ))}
@@ -86,7 +86,7 @@ export default function Home() {
                 <CardTitle>Currently Learning...</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-4 gap-2 mt-1">
+                <div className="grid grid-cols-4 gap-3 mt-1">
                   {learnTechStack.map((tech, index) => (
                     <TechIcons key={index} displayName={tech.displayName} srcName={tech.srcName} />
                   ))}
