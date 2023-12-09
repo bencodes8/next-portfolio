@@ -120,7 +120,7 @@ export default function Home() {
                   <div className="xl:w-1/2 w-full text-center">
                     {project.imageFile ? <Image className="mx-auto border rounded-md xs:max-xl:mt-2" 
                                                 src={`/projects/${project.imageFile}`} 
-                                                width={640} height={480} 
+                                                width={960} height={640} 
                                                 alt={`${project.imageFile}`} 
                                           /> 
                                        :

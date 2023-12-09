@@ -14,9 +14,13 @@ export const Projects: Project[] = [
         title: 'Neural Net. Pressure Analysis and Prediction',
         paragraphs: [
             "My mechanical engineering team's senior design project involved building a 'sparbot' inspired by football tackle dummies. The purpose of this project was to analyze the effects of physical impact caused through athlete training.",
-            "I was appointed the role of the software engineer in the software subsystem to build and train a neural network architecture to analyze and predict a pressure map. Our subteam utilized sensors from a FLIR IR camera and Tactilus sensor to provide the necessary training/test data.",
+            "As part of the the software subsystem, our job was to collect and proccess data to be fed into a neural network for regression anaylsis. The team utilized a volleyball, FLIR IR Camera, and Tactilus pressure sensor to record data.",
+            "We decided upon a Autoencoder architecture as that best suited our needs. This type of neural network is able to reconstruct inputs as outputs.",
+            "After training the neural network with IR footage and pressure reading labels, we hope for it to outputs its own prediction pressure mapping with any new IR footage.",
+            "Attained a 73.5% accuracy in predicting pressure maps from inputs of IR footage using our model."
 
         ],
+        imageFile: 'autoencoder.png',
         techIcons: [
             {displayName: 'Python3', srcName: 'python3'},
             {displayName: 'TensorFlow', srcName: 'tensorflow'}
