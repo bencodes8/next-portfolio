@@ -11,6 +11,20 @@ interface Project {
 
 export const Projects: Project[] = [
     {
+        title: 'Chatter Web-Application',
+        paragraphs: [
+            "Chatter is a web-application in the works that will utilize the power of websockets. This project will be an overall learning opportunity as I will be using a tech stack that I am not quite familiar with.",
+            "This application is inpsired by social platforms allowing real-time communications to occur such as Discord, Skype, and many others." 
+        ],
+        techIcons: [
+            {displayName: 'Angular', srcName: 'angular'},
+            {displayName: 'SocketIO', srcName: 'socketio'},
+            {displayName: 'Spring', srcName: 'spring-boot'},
+            {displayName: 'Postgres', srcName: 'postgres'}
+        ],
+        completion_status: false
+    },
+    {
         title: 'Neural Net. Pressure Analysis and Prediction',
         paragraphs: [
             "My mechanical engineering team's senior design project involved building a 'sparbot' inspired by football tackle dummies. The purpose of this project was to analyze the effects of physical impact caused through athlete training.",
@@ -25,7 +39,7 @@ export const Projects: Project[] = [
             {displayName: 'Python3', srcName: 'python3'},
             {displayName: 'TensorFlow', srcName: 'tensorflow'}
         ],
-        completion_status: false
+        completion_status: true
     },
     {
         title: 'Jobseeker Web-Application',
