@@ -17,9 +17,9 @@ export const Projects: Project[] = [
             "This application is inpsired by social platforms allowing real-time communications to occur such as Discord, Skype, and many others." 
         ],
         techIcons: [
-            {displayName: 'Angular', srcName: 'angular'},
+            {displayName: 'Nextjs', srcName: 'nextjs'},
             {displayName: 'SocketIO', srcName: 'socketio'},
-            {displayName: 'Spring', srcName: 'spring-boot'},
+            {displayName: 'Express', srcName: 'expressjs'},
             {displayName: 'Postgres', srcName: 'postgres'}
         ],
         completion_status: false
