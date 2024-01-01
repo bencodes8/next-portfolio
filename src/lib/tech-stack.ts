@@ -18,4 +18,5 @@ export const learnTechStack: TechIcon[] = [
     {displayName: 'Postgres', srcName: 'postgres'},
     {displayName: 'Angular', srcName: 'angular'},
     {displayName: 'Spring', srcName: 'spring-boot'},
+    {displayName: 'Vue', srcName: 'vue'}
 ];

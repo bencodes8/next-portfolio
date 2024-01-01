@@ -28,7 +28,7 @@ export default function HomeSection() {
                 <Avatar className="absolute right-10 top-5">
                       <AvatarImage src="avatar/memoji.jpeg" />
                       <AvatarFallback>BK</AvatarFallback>
-                    </Avatar>
+                </Avatar>
               </CardHeader>
               <CardContent>
                   <TypographyH2>Hi, I&apos;m <span className="text-primary">Ben</span></TypographyH2>

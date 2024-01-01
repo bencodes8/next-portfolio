@@ -11,11 +11,13 @@ interface Project {
 
 export const Projects: Project[] = [
     {
-        title: 'Chatter Web-Application',
+        title: 'Chatter',
         paragraphs: [
-            "Chatter is a web-application in the works that will utilize the power of websockets. This project will be an overall learning opportunity as I will be using a tech stack that I am not quite familiar with.",
-            "This application is inpsired by social platforms allowing real-time communications to occur such as Discord, Skype, and many others." 
+            "Chatter is a web-application in the works that will utilize the power of websockets. This project will be an overall learning opportunity as I will be diverting my attention from a Python to JavaScript backend.",
+            "I also want to get experience with databases using PostgreSQL,",
+            "This application is inpsired by social platforms allowing real-time communications to occur such as Discord, Skype, Microsoft Teams, etc." 
         ],
+        imageFile: 'chatter.png',
         techIcons: [
             {displayName: 'Nextjs', srcName: 'nextjs'},
             {displayName: 'SocketIO', srcName: 'socketio'},
@@ -25,7 +27,7 @@ export const Projects: Project[] = [
         completion_status: false
     },
     {
-        title: 'Neural Net. Pressure Analysis and Prediction',
+        title: 'Pressure Analysis and Prediction',
         paragraphs: [
             "My mechanical engineering team's senior design project involved building a 'sparbot' inspired by football tackle dummies. The purpose of this project was to analyze the effects of physical impact caused through athlete training.",
             "As part of the the software subsystem, our job was to collect and proccess data to be fed into a neural network for regression anaylsis. The team utilized a volleyball, FLIR IR Camera, and Tactilus pressure sensor to record data.",
@@ -42,7 +44,7 @@ export const Projects: Project[] = [
         completion_status: true
     },
     {
-        title: 'Jobseeker Web-Application',
+        title: 'Jobseeker',
         paragraphs: [
         "Jobseeker is a comprehensive full-stack web application designed to facilitate meaningful connections between users, whether they're seeking job opportunities or looking to hire talent.", 
         "With Jobseeker, users have the option to register and log in as either a 'seeker' or an 'employer'.", 
@@ -58,7 +60,7 @@ export const Projects: Project[] = [
         completion_status: true
     },
     {
-        title: 'Social Network Web-Application',
+        title: 'Social Network',
         paragraphs: [
             "This social network web-application was built to have some functionality similar to those found on popular social media platforms.",
             "All users, no matter if authenticated, can view all posts the platform has stored in its database and will be fetched via HTTP request. Users who are authenticated has access to more features.",
@@ -74,7 +76,7 @@ export const Projects: Project[] = [
         completion_status: true
     },
     {
-        title: 'Game Auctions Web-Application',
+        title: 'Game Auctions',
         paragraphs: [
             "This e-commerce web-application allows users to participate in an auction to bid for their most wanted video game.",
             "All users, no matter if authentiacted, can view all listings and listing status' posted by registered users. Django is able to dynamically retrieve these models and render them on the page.",

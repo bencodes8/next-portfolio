@@ -14,11 +14,9 @@ export function CertificateIcon ({ displayName, imageSrc, href, description, yea
     return (
         <HoverCard>
             <HoverCardTrigger asChild>
-                <div className="flex flex-col justify-center items-center">
-                    <Link href={href} target="_blank" rel="noopener noreferrer">
-                        <Image src={`/special/${imageSrc}.png`} alt={displayName} width={64} height={64} />
-                    </Link>
-                </div>
+                <Link href={href} target="_blank" rel="noopener noreferrer">
+                    <Image src={`/special/${imageSrc}.png`} alt={displayName} width={64} height={64} />
+                </Link>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
