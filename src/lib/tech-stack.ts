@@ -14,8 +14,8 @@ export const techStack: TechIcon[] = [
 ];
   
 export const learnTechStack: TechIcon[] = [
+    {displayName: 'Express', srcName: 'expressjs'},
+    {displayName: 'Postgres', srcName: 'postgres'},
     {displayName: 'Angular', srcName: 'angular'},
     {displayName: 'Spring', srcName: 'spring-boot'},
-    {displayName: 'Postgres', srcName: 'postgres'},
-    {displayName: 'Vue3', srcName: 'vue'},
 ];

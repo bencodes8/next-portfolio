@@ -19,7 +19,7 @@ export const certificates: Certificate[] = [
       displayName: 'CS50SQL',
       imageSrc: 'harvard-logo',
       href: 'https://certificates.cs50.io/efa9ed13-5423-4e5c-8a99-e2b64e013603.pdf?size=letter',
-      description: 'Courses provided foundation using SQL to create, read, update, and delete relational databases. Also learned how to model real-world entities, normalize data, and understood trade-offs when indexing tables within databases.',
+      description: 'Courses provided foundation using SQL to create, read, update, and delete relational databases. Also learned how to model real-world entities, normalize data, and understand trade-offs when indexing tables within databases.',
       year_received: 2023
     }
 ];
