@@ -20,7 +20,7 @@ export default function WireFrameHomeSection() {
                 <div id="left" className="flex items-center justify-center w-1/2">
                     <div className="inline-block text-left w-[28rem] px-2">
                         <div className="block relative py-2 right-0">
-                            <TypographyH2>Hi I'm <span className="text-blue-500">Ben</span>,</TypographyH2>   
+                            <TypographyH2>Hi I&apos;m <span className="text-blue-500">Ben</span>,</TypographyH2>   
                             <TypographyH4 className="opacity-50">Aspiring Full-Stack Engineer</TypographyH4>
                             <Avatar className="absolute right-0 top-0 border">
                                 <AvatarImage src="avatar/memoji.jpeg" />
