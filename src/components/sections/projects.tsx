@@ -11,7 +11,7 @@ import { TypographyP } from "../typography/text";
 
 export default function ProjectSection() {
     return (
-        <section id="projects" className="flex flex-col items-center justify-center mt-4">
+        <section id="projects" className="flex flex-col items-center justify-center mt-4 scale-90">
         <TypographyH2 className="xs:max-lg:pt-10 text-blue-500">Projects</TypographyH2>
         <Accordion type="multiple" className="w-full p-2">
           { Projects.map((project, index) => (
