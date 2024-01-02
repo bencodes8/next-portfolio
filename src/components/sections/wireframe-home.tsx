@@ -22,7 +22,7 @@ export default function WireFrameHomeSection() {
                         <div className="block relative py-2 right-0">
                             <TypographyH2>Hi I&apos;m <span className="text-blue-500">Ben</span>,</TypographyH2>   
                             <TypographyH4 className="opacity-50">Aspiring Full-Stack Engineer</TypographyH4>
-                            <Avatar className="absolute right-0 top-0 border">
+                            <Avatar className="absolute right-0 top-0 border xs:max-sm:hidden">
                                 <AvatarImage src="avatar/memoji.jpeg" />
                                 <AvatarFallback>BK</AvatarFallback>
                             </Avatar>
