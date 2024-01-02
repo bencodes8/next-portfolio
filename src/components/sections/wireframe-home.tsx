@@ -61,7 +61,7 @@ export default function WireFrameHomeSection() {
                     </div>
                 </div>
                 <div id="right" className="flex flex-col items-center justify-center scale-90 p-2">
-                    <Card className="xs:max-lg:w-[48rem]">
+                    <Card className="xs:max-lg:max-w-[48rem]">
                         <CardHeader>
                             <CardTitle>Featured Project: <span className="text-red-500">{Projects[0].title}</span></CardTitle>
                             <CardDescription>Current project I am working on.</CardDescription>
@@ -70,7 +70,7 @@ export default function WireFrameHomeSection() {
                             <Image src={`/projects/${Projects[0].imageFile}`} alt={Projects[0].title} width={640} height={480} />
                         </CardContent>
                     </Card>
-                    <Card className="mt-4 xs:w-[48rem] lg:w-full">
+                    <Card className="mt-4 xs:max-w-[48rem] lg:w-full">
                         <CardHeader>
                             <CardTitle>Planning on Learning...</CardTitle>
                         </CardHeader>
@@ -84,10 +84,10 @@ export default function WireFrameHomeSection() {
                     </Card>
                 </div>
             </div>
-            <div id="bottom" className="grow flex flex-col items-center border-t border-b scale-90">
-                <div className="w-full flex justify-center space-x-10 py-4">
+            <div id="bottom" className="grow flex flex-col items-center justify-center border-t border-b scale-90">
+                <div className="w-full flex justify-center space-x-10">
                     <ScrollArea className="w-full">
-                        <div className="flex justify-center items-center w-full space-x-12 pb-4 px-4">
+                        <div className="flex justify-center items-center w-full space-x-12 px-4">
                             {techStack.map((icon, index) => (
                                 <TechIcons key={index} displayName={icon.displayName} srcName={icon.srcName} />
                             ))}
