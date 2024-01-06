@@ -1,12 +1,10 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CertificateIcon } from "@/components/certificate-icons";
-import FeaturedProjectImageLoader from "@/components/ui/image-loader";
 import Image from "next/image";
 import Link from "next/link";
 import { TechIcons } from "@/components/tech-icons";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Skeleton } from "@/components/ui/skeleton";
 import { TypographyH2, TypographyH3, TypographyH4, TypographyLarge } from "@/components/typography/headings";
 import { TypographyP } from "@/components/typography/text";
 import { Projects } from "@/lib/projects";
@@ -15,9 +13,9 @@ import { learnTechStack, techStack } from "@/lib/tech-stack";
 
 export default function WireFrameHomeSection() {
     return (
-        <section id="home" className="flex flex-col mt-[52px] min-h-[calc(100vh-52px)]">
-            <div id="top" className="flex h-[90%] xs:max-lg:flex-col">
-                <div id="left" className="flex items-center justify-center scale-90 xs:w-full lg:w-1/2">
+        <section id="home" className="mt-[52px] xs:min-h-[calc(100vh-52px)] lg:h-[calc(100vh-52px)]">
+            <div id="top" className="flex h-[90%] xs:max-lg:flex-col scale-90">
+                <div id="left" className="flex items-center justify-center xs:w-full lg:w-1/2">
                     <div className="inline-block text-left xs:w-[48rem] lg:w-[28rem] px-2">
                         <div className="block relative py-2 right-0">
                             <TypographyH2>Hi I&apos;m <span className="text-blue-500">Ben</span>,</TypographyH2>   
@@ -60,7 +58,7 @@ export default function WireFrameHomeSection() {
                         </div>
                     </div>
                 </div>
-                <div id="right" className="flex flex-col items-center justify-center scale-90 p-2">
+                <div id="right" className="flex flex-col items-center justify-center p-2 xs:max-lg:mt-8">
                     <Card className="xs:max-lg:max-w-[48rem]">
                         <CardHeader>
                             <CardTitle>Featured Project: <span className="text-red-500">{Projects[0].title}</span></CardTitle>
@@ -84,7 +82,7 @@ export default function WireFrameHomeSection() {
                     </Card>
                 </div>
             </div>
-            <div id="bottom" className="grow flex flex-col items-center justify-center border-t border-b scale-90">
+            <div id="bottom" className="grow flex flex-col items-center justify-center scale-90">
                 <div className="w-full flex justify-center space-x-10">
                     <ScrollArea className="w-full">
                         <div className="flex justify-center items-center w-full space-x-12 px-4">

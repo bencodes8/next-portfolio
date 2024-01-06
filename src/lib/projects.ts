@@ -19,7 +19,7 @@ export const Projects: Project[] = [
         ],
         imageFile: 'chatter.png',
         techIcons: [
-            {displayName: 'Nextjs', srcName: 'nextjs'},
+            {displayName: 'Angular', srcName: 'angular'},
             {displayName: 'SocketIO', srcName: 'socketio'},
             {displayName: 'Express', srcName: 'expressjs'},
             {displayName: 'Postgres', srcName: 'postgres'}
