@@ -1,4 +1,4 @@
-import { Certificate } from "@/components/certificate-icons";
+import { Certificate } from "@/app/types/types";
 
 export const certificates: Certificate[] = [
     {

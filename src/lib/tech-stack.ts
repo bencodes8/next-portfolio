@@ -1,4 +1,4 @@
-import { TechIcon } from "@/components/tech-icons";
+import { TechIcon } from "@/app/types/types";
 
 export const techStack: TechIcon[] = [
     {displayName: 'HTML5', srcName: 'html5'},
@@ -14,9 +14,9 @@ export const techStack: TechIcon[] = [
 ];
   
 export const learnTechStack: TechIcon[] = [
-    {displayName: 'Angular', srcName: 'angular'},
     {displayName: 'Express', srcName: 'expressjs'},
     {displayName: 'Postgres', srcName: 'postgres'},
     {displayName: 'NestJS', srcName: 'nestjs'},
+    {displayName: 'Angular', srcName: 'angular'},
     {displayName: 'Vue', srcName: 'vue'}
 ];

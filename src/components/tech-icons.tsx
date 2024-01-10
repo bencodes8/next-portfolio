@@ -1,9 +1,5 @@
 import Image from 'next/image';
-
-export interface TechIcon {
-    displayName: string;
-    srcName: string;
-};
+import { TechIcon } from '@/app/types/types';
 
 export function TechIcons({ displayName, srcName, ...props }: TechIcon) {
     return (

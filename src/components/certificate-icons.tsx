@@ -1,14 +1,7 @@
+import { Certificate } from '@/app/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card';
-
-export interface Certificate { 
-    displayName: string;
-    imageSrc: string;
-    href: string;
-    description: string;
-    year_received: number;
-};
 
 export function CertificateIcon ({ displayName, imageSrc, href, description, year_received }: Certificate) {
     return (

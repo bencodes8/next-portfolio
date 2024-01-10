@@ -1,25 +1,16 @@
-import { TechIcon } from '@/components/tech-icons';
-
-interface Project {
-    title: string;
-    paragraphs: string[];
-    imageFile?: string;
-    techIcons: TechIcon[];
-    repoLink?: string;
-    completion_status: boolean;
-}
+import { Project } from '@/app/types/types';
 
 export const Projects: Project[] = [
     {
         title: 'Chatter',
         paragraphs: [
-            "Chatter is a web-application in the works that will utilize the power of websockets. This project will be an overall learning opportunity as I will be diverting my attention from a Python to JavaScript backend.",
-            "I also want to get experience with databases using PostgreSQL,",
+            "Chatter is a web-application in the works that will utilize the power of websockets to establish a consistent connection between users. This project will be a learning opportunity for backend development as I will be diverting my attention from a Python to JavaScript backend.",
+            "Most of the projects I've done had a Django backend using the defaulted SQLite database. Although it is fine for developing applications fast, when having to deal with problems such as scale, SQLite would not be the best option.",
             "This application is inpsired by social platforms allowing real-time communications to occur such as Discord, Skype, Microsoft Teams, etc." 
         ],
         imageFile: 'chatter.png',
         techIcons: [
-            {displayName: 'Angular', srcName: 'angular'},
+            {displayName: 'Nextjs', srcName: 'nextjs'},
             {displayName: 'SocketIO', srcName: 'socketio'},
             {displayName: 'Express', srcName: 'expressjs'},
             {displayName: 'Postgres', srcName: 'postgres'}
