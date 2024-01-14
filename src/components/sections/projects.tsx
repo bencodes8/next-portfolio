@@ -20,13 +20,13 @@ export default function ProjectSection() {
                 <AccordionContent className="flex xs:max-xl:flex-col justify-center items-center">
                   <div className="xl:w-1/2 w-full xs:max-xl:order-last xs:max-xl:mt-4 pr-4">
                     <Badge variant={project.completion_status ? "secondary" : "destructive"}>{project.completion_status ? 'Completed' : 'In Progress'}</Badge>
-                    {project.paragraphs.map((paragraph, index) => (
+                    {project.paragraphs.map((paragraph: any, index: number) => (
                       <TypographyP key={index} className="text-primary opacity-80">
                         {paragraph}
                       </TypographyP>
                     ))}
                     <div className="flex space-x-6 mt-6">
-                      {project.techIcons.map((icon, index) => (
+                      {project.techIcons.map((icon: any, index: number) => (
                         <TechIcons key={index} displayName={icon.displayName} srcName={icon.srcName} />
                       ))}
                     </div>

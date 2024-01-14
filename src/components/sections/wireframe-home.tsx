@@ -14,7 +14,7 @@ import { learnTechStack, techStack } from "@/lib/tech-stack";
 export default function WireFrameHomeSection() {
     return (
         <section id="home" className="mt-[52px] xs:min-h-[calc(100vh-52px)] lg:h-[calc(100vh-52px)]">
-            <div id="top" className="flex h-[90%] xs:max-lg:flex-col scale-90">
+            <div id="top" className="flex h-[90%] xs:max-lg:flex-col xs:max-lg:scale-90">
                 <div id="left" className="flex items-center justify-center xs:w-full lg:w-1/2">
                     <div className="inline-block text-left xs:w-[48rem] lg:w-[28rem] px-2">
                         <div className="block relative py-2 right-0">
@@ -68,7 +68,7 @@ export default function WireFrameHomeSection() {
                             <Image src={`/projects/${Projects[0].imageFile}`} alt={Projects[0].title} width={640} height={480} />
                         </CardContent>
                     </Card>
-                    <Card className="mt-4 xs:max-w-[48rem] lg:w-full">
+                    <Card className="mt-4 xs:max-lg:max-w-[48rem] w-full">
                         <CardHeader>
                             <CardTitle>Planning on Learning...</CardTitle>
                         </CardHeader>
@@ -82,7 +82,7 @@ export default function WireFrameHomeSection() {
                     </Card>
                 </div>
             </div>
-            <div id="bottom" className="grow flex flex-col items-center justify-center scale-90">
+            <div id="bottom" className="grow flex flex-col items-center justify-center xs:max-lg:scale-90">
                 <div className="w-full flex justify-center space-x-10">
                     <ScrollArea className="w-full">
                         <div className="flex justify-center items-center w-full space-x-12 px-4">

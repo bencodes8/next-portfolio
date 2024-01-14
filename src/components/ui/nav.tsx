@@ -31,7 +31,7 @@ export default function Nav() {
         <nav className="fixed w-full left-0 top-0 border-b-2 z-10 backdrop-blur-md">
             <div className="xs:container flex p-1 items-center">
                 <div className="flex-grow">
-                    <TypographyH4 className="text-blue-500">Ben Ku</TypographyH4>
+                    <TypographyH4>Ben Ku</TypographyH4>
                 </div>
                 <ul className="flex items-center space-x-6">
                     <li><button type="button" className="hover:text-muted-foreground xs:max-sm:hidden block transition" onClick={scrollToTop}>Home</button></li>

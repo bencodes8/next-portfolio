@@ -1,4 +1,4 @@
-import { Certificate } from "@/app/types/types";
+import { Certificate } from "@/types/types";
 
 export const certificates: Certificate[] = [
     {

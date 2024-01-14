@@ -1,4 +1,4 @@
-import { Certificate } from '@/app/types/types';
+import { Certificate } from '@/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card';
