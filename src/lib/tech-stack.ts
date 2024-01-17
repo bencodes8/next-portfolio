@@ -1,16 +1,16 @@
 import { TechIcon } from "@/types/types";
 
 export const techStack: TechIcon[] = [
-    {displayName: 'HTML5', srcName: 'html5'},
-    {displayName: 'CSS3', srcName: 'css3'},
     {displayName: 'JavaScript', srcName: 'javascript'},
     {displayName: 'TypeScript', srcName: 'typescript'},
+    {displayName: 'NodeJS', srcName: 'nodejs'},
     {displayName: 'React', srcName: 'react'},
     {displayName: 'Nextjs', srcName: 'nextjs'},
     {displayName: 'Bootstrap', srcName: 'bootstrap'},
     {displayName: 'MaterialUI', srcName: 'material-ui'},
     {displayName: 'Tailwind', srcName: 'tailwind'},
-    {displayName: 'Django', srcName: 'django'}
+    {displayName: 'Django', srcName: 'django'},
+    {displayName: 'Express', srcName: 'expressjs'}
 ];
   
 export const learnTechStack: TechIcon[] = [

@@ -1,4 +1,5 @@
 'use client';
+
 import { TypographyH4 } from '../typography/headings';
 import { ModeToggle } from './theme-toggle';
 import { animateScroll, scroller } from 'react-scroll';
@@ -9,7 +10,7 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-  } from '@/components/ui/dropdown-menu';
+} from '@/components/ui/dropdown-menu';
 
 export default function Nav() {
     const scrollToTop = () => {
@@ -33,7 +34,7 @@ export default function Nav() {
                 <div className="flex-grow">
                     <TypographyH4>Ben Ku</TypographyH4>
                 </div>
-                <ul className="flex items-center space-x-6">
+                <ul className="flex items-center xs:space-x-2 sm:space-x-6">
                     <li><button type="button" className="hover:text-muted-foreground xs:max-sm:hidden block transition" onClick={scrollToTop}>Home</button></li>
                     <li><button type="button" className="hover:text-muted-foreground xs:max-sm:hidden block transition" onClick={scrollToProjects}>Projects</button></li>
                     <li><button type="button" className="hover:text-muted-foreground xs:max-sm:hidden block transition">
