@@ -19,3 +19,9 @@ export interface Project {
     repoLink?: string;
     completion_status: boolean;
 }
+
+export interface Work {
+    job_title: string;
+    start_date: string;
+    end_date: string | null;
+}

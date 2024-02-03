@@ -1,28 +1,52 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  TypographyH2,
-  TypographyH3,
-  TypographyH4,
-  TypographyLarge,
-} from "@/components/typography/headings";
+import { TypographyH3, TypographyH4 } from "@/components/typography/headings";
 import { TypographyP } from "@/components/typography/text";
 import { workExperience } from "@/lib/work";
 import Work from "@/components/work";
+import FooterSection from "@/components/sections/footer";
+import Image from "next/image";
 
-export default function HomeSection() {
+export default function HomePage() {
   return (
-    <section id="home" className="mt-[52px] pt-4">
+    <section id="home" className="mt-[57px] pt-4">
       <TypographyH3>hi, i am ben.</TypographyH3>
       <div className="font-light">software developer / mechanical engineer</div>
+      <i className="flex space-x-1 mt-2 mb-4">
+        <Link
+          className="flex items-center"
+          href="https://www.linkedin.com/in/benybku"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/icons/brand/linkedin.svg"
+            alt="linkedin"
+            width={48}
+            height={48}
+          />
+        </Link>
+        <Link
+          href="https://github.com/bencodes8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/icons/brand/github.svg"
+            alt="github"
+            width={48}
+            height={48}
+          />
+        </Link>
+      </i>
       <TypographyH4 className="mt-4 underline-offset-4 underline">
         about
       </TypographyH4>
       <TypographyP className="font-light">
-        I am currently working as a software developer. For the past two years,
-        I have been self-studying programming and computer science principles to
-        build projects.
+        I am currently working as a software developer. Since 2022, I have been
+        self-studying programming and computer science principles to build
+        projects.
         <br />
         <br />
         Python is my most comfort language followed by JavaScript. I mainly use
@@ -58,6 +82,14 @@ export default function HomeSection() {
           <span className="font-semibold">Databases:</span> SQLite, PostgreSQL
         </li>
       </ul>
+      <div className="flex justify-center mt-10">
+        <Button
+          className="bg-indigo-500 dark:text-primary hover:bg-indigo-600"
+          asChild
+        >
+          <Link href="/projects">check out my projects</Link>
+        </Button>
+      </div>
       <TypographyH4 className="mt-4 underline-offset-4 underline">
         plans
       </TypographyH4>
@@ -71,9 +103,8 @@ export default function HomeSection() {
         performant applications, and also C# for game modding, driven by my
         interest in video games.
       </TypographyP>
-      <div className="flex justify-center my-6">
-        <Button variant="secondary">check out my projects</Button>
-      </div>
+
+      <FooterSection />
     </section>
   );
 }

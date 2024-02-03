@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
-import '@/styles/globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
+import type { Metadata } from "next";
+import "@/styles/globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Nav from "@/components/nav";
 
 export const metadata: Metadata = {
-  title: 'Ben Ku',
-  description: 'Personal Portfolio',
-}
+  title: "ben ku",
+  description: "Personal Portfolio",
+};
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -19,11 +20,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
-          {children}
+          <main className="container max-w-screen-sm">
+            <Nav />
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
