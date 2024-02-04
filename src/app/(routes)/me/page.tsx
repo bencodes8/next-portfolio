@@ -106,11 +106,11 @@ export default function HomePage() {
       </TypographyH4>
       <TypographyP className="font-light">
         My most recent project involves developing a real-time, chat
-        web-application. This project will teach me the power of websockets and
+        web-application. This project will teach me the capabilities of websockets and
         authentication middleware that can be valuable for building future
         applications.
         <br />
-        <br />I eventually plan on learning Golang for creating highly
+        <br />I eventually plan on learning Go for creating highly
         performant applications, and possibly C# for game modding, driven by my
         interest in video games.
       </TypographyP>

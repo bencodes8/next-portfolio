@@ -89,8 +89,8 @@ export const Projects: Project[] = [
     ],
     imageFile: "commerce.png",
     techIcons: [
-      { displayName: "HTML5", srcName: "html5" },
-      { displayName: "CSS3", srcName: "css3" },
+      { displayName: "HTML", srcName: "html5" },
+      { displayName: "CSS", srcName: "css3" },
       { displayName: "Bootstrap", srcName: "bootstrap" },
       { displayName: "Django", srcName: "django" },
     ],

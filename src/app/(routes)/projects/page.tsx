@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Suspense } from "react";
 import Loading from "./loading";
 import { Projects } from "@/lib/projects";
+import FooterSection from "@/components/sections/footer";
 
 export const metadata: Metadata = {
   title: "projects • ben ku",
@@ -36,6 +37,7 @@ export default function ProjectsPage() {
             </div>
           ))}
         </div>
+        <FooterSection />
       </section>
     </Suspense>
   );
