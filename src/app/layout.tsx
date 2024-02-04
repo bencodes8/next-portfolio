@@ -16,14 +16,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="container max-w-screen-sm">
             <Nav />
-            {children}
+            <div className="mt-[57px] pt-4">{children}</div>
           </main>
         </ThemeProvider>
       </body>
