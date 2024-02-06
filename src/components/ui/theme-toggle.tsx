@@ -35,13 +35,11 @@ export function ModeToggle() {
       className="relative"
     >
       <Sun
-        name="light"
         className={`h-[1.2rem] w-[1.2rem] transition ease-in-out text-yellow-300 ${
           theme === "dark" ? "rotate-0 scale-100" : "rotate-90 scale-0"
         }`}
       />
       <Moon
-        name="dark"
         className={`absolute h-[1.2rem] w-[1.2rem] transition ease-in-out text-gray-500 ${
           theme === "dark" ? "rotate-90 scale-0" : "rotate-0 scale-100"
         }`}
