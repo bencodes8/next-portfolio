@@ -43,9 +43,10 @@ export default function Nav() {
               type="button"
               className="hover:text-muted-foreground xs:max-sm:hidden block transition opacity-90"
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              {/* <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 resume
-              </a>
+              </a> */}
+              <Link href="/resume">resume</Link>
             </button>
           </li>
           <li className="sm:hidden">
@@ -59,9 +60,12 @@ export default function Nav() {
                 <DropdownMenuItem asChild>
                   <Link href="/projects">projects</Link>
                 </DropdownMenuItem>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <DropdownMenuItem asChild>
+                  <Link href="/resume">resume</Link>
+                </DropdownMenuItem>
+                {/* <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                   <DropdownMenuItem>resume</DropdownMenuItem>
-                </a>
+                </a> */}
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
